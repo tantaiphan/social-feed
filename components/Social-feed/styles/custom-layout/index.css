@@ -1,0 +1,140 @@
+
+.custom_layout_container {
+  background-color: rgb(243, 243, 242);
+border-radius: 12px;
+padding: 15px;
+}
+
+.custom_layout_header {
+display: flex;
+align-items: center;
+margin-bottom: 20px;
+}
+
+.custom_layout_back_button {
+background: none;
+border: none;
+color: #007aff;
+font-size: 13px;
+cursor: pointer;
+font-weight: 500;
+} 
+
+.custom_layout_header h1 {
+font-size: 14px;
+margin: 0;
+flex-grow: 1;
+text-align: center;
+font-weight: 700;
+}
+
+.custom_layout_settings {
+display: flex;
+flex-direction: column;
+}
+
+.custom_layout_column {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 3px 0;
+}
+.custom_layout_column_item {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 5px 0px 5px 10px;
+
+}
+
+.custom_layout_setting_item {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding:5px 0;
+border-bottom: 1px solid #3a3a3c;
+}
+
+.custom_layout_setting_item:last-child {
+border-bottom: none;
+}
+
+.custom_layout_setting_item .custom_layout_value {
+color: #007aff;
+}
+
+.custom_layout_setting_item input[type="checkbox"] {
+accent-color: #007aff;
+}
+
+
+.custom_layout_switch {
+position: relative;
+display: inline-block;
+width: 34px;
+height: 20px;
+}
+
+.custom_layout_switch input {
+opacity: 0;
+width: 0;
+height: 0;
+}
+
+.custom_layout_slider {
+position: absolute;
+cursor: pointer;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background-color: #ccc;
+transition: 0.4s;
+border-radius: 34px;
+}
+
+.custom_layout_slider:before {
+position: absolute;
+content: "";
+height: 12px;
+width: 12px;
+left: 4px;
+bottom: 4px;
+background-color: white;
+transition: 0.4s;
+border-radius: 50%;
+}
+
+input:checked + .custom_layout_slider {
+background-color: #007aff;
+}
+
+input:checked + .custom_layout_slider:before {
+transform: translateX(14px);
+}
+
+.custom_layout_input_number {
+  width: 25px;
+  background: #fff;
+  color: rgb(20, 148, 255);
+  font-weight: 600;
+  padding-left: 2px !important;
+  padding-right: 2px !important;
+  text-align: right;
+  border-radius: 3px;
+}
+
+.custom_layout_input_number::-webkit-outer-spin-button,
+.custom_layout_input_number::-webkit-inner-spin-button {
+-webkit-appearance: none;
+margin: 0;
+}
+
+/* Firefox */
+.custom_layout_input_number[type=number] {
+-moz-appearance: textfield;
+}
+
+.custom_layout_label {
+  font-weight: 500;
+}

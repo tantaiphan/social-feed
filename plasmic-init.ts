@@ -1,4 +1,6 @@
 import { initPlasmicLoader } from "@plasmicapp/loader-nextjs";
+import { DataFetcher } from "./components/Social-feed/containers/SocialFeedFetchData";
+import { dataFetcherMeta } from "./components/Social-feed/containers/meta-data/metaData";
 
 export const PLASMIC = initPlasmicLoader({
   projects: [
@@ -23,3 +25,4 @@ export const PLASMIC = initPlasmicLoader({
 // https://docs.plasmic.app/learn/app-hosting/#set-a-plasmic-project-to-use-your-app-host
 
 // PLASMIC.registerComponent(...);
+PLASMIC.registerComponent(DataFetcher, dataFetcherMeta);

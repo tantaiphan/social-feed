@@ -1,0 +1,25 @@
+export const GridLayoutIcon = ({
+  width,
+  height,
+  fill,
+}: {
+  width?: number;
+  height?: number;
+  fill?: string;
+}) => {
+  return (
+    <svg
+      width={width || 64}
+      height={height || 64}
+      fill={fill || "none"}
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 64 64"
+    >
+      <path
+        fillRule="evenodd"
+        d="M22 42a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1V43a1 1 0 0 1 1-1h13Zm17 0a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1H26a1 1 0 0 1-1-1V43a1 1 0 0 1 1-1h13Zm16 0a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1H43a1 1 0 0 1-1-1V43a1 1 0 0 1 1-1h12ZM22 25a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1V26a1 1 0 0 1 1-1h13Zm17 0a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1H26a1 1 0 0 1-1-1V26a1 1 0 0 1 1-1h13Zm16 0a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1H43a1 1 0 0 1-1-1V26a1 1 0 0 1 1-1h12ZM22 8a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1h13Zm17 0a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1H26a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1h13Zm16 0a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1H43a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1h12Z"
+        clipRule="evenodd"
+      ></path>
+    </svg>
+  );
+};
